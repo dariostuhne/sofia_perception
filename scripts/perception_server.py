@@ -18,21 +18,16 @@ class SofiaPerception(object):
         mask = ~np.isnan(z_values) * (z_values > self.z) * (z_values < self.z + 0.15)    # removing spurious points 
         self.points = self.points[mask]
 
-        #########################
-        ## YOUR CODE GOES HERE ##
-        #########################
-
         object_centroid = Point()
-        # object_centroid.x = ...
-        # object_centroid.y = ...
-        # object_centroid.z = ...
+        # object_centroid.x = 
+        # object_centroid.y = 
+        # object_centroid.z =
 
         res = DetectObjectResponse()
         res.object_centroid = object_centroid
-
+        
         return res
-
-
+        
 def main():
     rospy.init_node('detect_object_server')
     perception = SofiaPerception()
