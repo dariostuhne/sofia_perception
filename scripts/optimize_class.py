@@ -95,11 +95,6 @@ class Fminsearch:
                 quaternion_matrix(np.asarray(data_tf)[i, 3:]))
             Teef[i, 0:3, 3] = np.asarray(data_tf)[i, 0:3]
 
-        #########################
-        ## YOUR CODE GOES HERE ##
-        #########################
-        # return f
-
     def transformInputData(self, posquat):
         '''Transforms input data using provided transformation.
         
